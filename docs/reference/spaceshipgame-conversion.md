@@ -19,6 +19,11 @@ chat, but that context was not stored in tracked files.
 This file turns that session state into repo-visible context so future agents do
 not need to reconstruct it from memory.
 
+The user later clarified that `./poprzednia-rozmwa.md` contains the exact
+approved action plan from the earlier conversation. Future AI sessions should
+read that file first and treat it as the most specific branch-level plan when it
+is available in the checkout.
+
 ## Current target-repo understanding
 
 The analyzed target repository is public at
@@ -115,6 +120,7 @@ When editing this branch, prefer changes that help with:
 1. preserving the cross-repo context
 2. making the current conversion goal legible to future AIs
 3. identifying which BMGD materials are worth adapting next
+4. staying aligned with the approved plan recorded in `./poprzednia-rozmwa.md`
 
 Do not treat this branch as a general BMGD roadmap branch unless the user says
 otherwise.
@@ -125,6 +131,10 @@ otherwise.
   environment during this session, so its exact text is not preserved here.
 - No tracked file in this repo previously captured the SpaceshipGame conversion
   context, which is why this note was added.
+- During the PR comment follow-up, `./poprzednia-rozmwa.md` was referenced by
+  the user as the approved plan, but it was not visible in this local checkout.
+  If it appears in a later fetch or commit, it should take precedence over this
+  summary where they differ.
 
 ## Suggested next action for the next AI
 

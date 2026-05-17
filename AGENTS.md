@@ -17,6 +17,9 @@ The active branch name already reflects that goal:
 - The large BMAD-METHOD sync tracked in
   `./SYNC-PLAN.md` is finished work for BMGD v0.5.0, not the current cross-repo
   task.
+- The user stated that `./poprzednia-rozmwa.md` contains the exact approved plan
+  from the previous conversation. Treat that file as a primary planning source
+  for this branch when it is present in the checkout.
 - The recent cross-repo analysis concluded that the target repo should receive
   a **semantic conversion**, not a 1:1 file port.
 - BMGD uses the full module/runtime model:
@@ -90,6 +93,7 @@ Keep these for later, because `SpaceshipGame` is still mostly prompt/doc setup:
 
 ## Source-of-truth files in this repo for this branch
 
+- `./poprzednia-rozmwa.md` - approved action plan from the prior conversation
 - `./AGENTS.md`
 - `./docs/reference/spaceshipgame-conversion.md`
 - `./SYNC-PLAN.md`
