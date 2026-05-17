@@ -85,7 +85,7 @@ BMGD. Instead:
 | target market section | `docs/GAME_BRIEF.md` | keep audience and market framing, but bias toward browser/PWA/mobile realities |
 | game fundamentals section | `docs/GAME_BRIEF.md` | keep pillars, core loop, primary mechanics, and experience goals |
 | scope and constraints section | `docs/GAME_BRIEF.md` | align with Phaser 4, TypeScript, Vite, PWA-first Android delivery, Dexie, and Zod |
-| reference framework section | `docs/GAME_BRIEF.md` | keep inspirations, not-taking decisions, competitors, and differentiators |
+| reference framework section | `docs/GAME_BRIEF.md` | keep inspirations, non-goals from inspirations, competitors, and differentiators |
 | content and production section | `docs/GAME_BRIEF.md` | keep world, narrative approach, art/audio direction, production approach, and risks |
 | success and handoff section | `docs/GAME_BRIEF.md` | keep MVP definition, success metrics, next actions, and open questions |
 | checklist | embedded validation block in `game-brief.prompt.md` | use as a concise review rubric instead of a separate runtime checklist |

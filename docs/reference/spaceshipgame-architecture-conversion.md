@@ -134,8 +134,8 @@ durable docs in this order:
 
 1. `mechanika/` for final gameplay rules
 2. `docs/SCOPE.md` for MVP boundaries
-3. `docs/GAME_BRIEF.md` if present
-4. `docs/GDD.md` if present
+3. `docs/GDD.md` if present
+4. `docs/GAME_BRIEF.md` if present
 5. existing `docs/ARCHITECTURE.md`
 6. `.github/copilot-instructions.md`
 
