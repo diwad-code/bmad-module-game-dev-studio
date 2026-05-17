@@ -57,11 +57,12 @@ Plan your technical architecture and project structure.
 
 | Workflow | Agent | Purpose | Outputs |
 |----------|-------|---------|---------|
+| **document-project** | Technical Writer | Analyze an existing game repository and generate brownfield documentation | Project knowledge docs |
 | **create-architecture** | Game Architect | Create game architecture with engine-specific patterns | `architecture.md` |
 | **generate-project-context** | Game Architect | Create project context for AI consistency | `project-context.md` |
 | **correct-course** | Game Architect | Course correction when implementation is off-track | Analysis report |
 
-**Use when:** You need to plan how to build your game or need to get back on track.
+**Use when:** You need to understand an existing game project, plan how to build your game, or get implementation back on track.
 
 ---
 
@@ -71,12 +72,12 @@ Plan and track development through sprints and stories.
 
 | Workflow | Agent | Purpose | Outputs |
 |----------|-------|---------|---------|
-| **sprint-planning** | Game Scrum Master | Generate sprint status from epic files | `sprint-status.yaml` |
-| **sprint-status** | Game Scrum Master | View sprint progress, risks, and next actions | Status report |
-| **create-story** | Game Scrum Master | Create story with ready-for-dev marking | Story file in `stories/` |
+| **sprint-planning** | Game Developer | Generate sprint status from epic files | `sprint-status.yaml` |
+| **sprint-status** | Game Developer | View sprint progress, risks, and next actions | Status report |
+| **create-story** | Game Developer | Create story with ready-for-dev marking | Story file in `stories/` |
 | **dev-story** | Game Developer | Implement story tasks with tests | Completed feature |
 | **code-review** | Game Developer | Perform clean context QA code review | Review report |
-| **retrospective** | Game Scrum Master | Facilitate retrospective after epic completion | Retrospective notes |
+| **retrospective** | Game Developer | Facilitate retrospective after epic completion | Retrospective notes |
 
 **Use when:** You're ready to build features, track progress, or review work.
 
@@ -88,13 +89,13 @@ Set up and run game testing across all phases.
 
 | Workflow | Agent | Purpose | Outputs |
 |----------|-------|---------|---------|
-| **test-framework** | Game QA | Initialize game test framework (Unity/Unreal/Godot) | Test project setup |
-| **test-design** | Game QA | Create comprehensive game test scenarios | Test plan |
-| **automate** | Game QA | Generate automated game tests | Test suite |
-| **e2e-scaffold** | Game QA | Scaffold E2E testing infrastructure | E2E test framework |
-| **playtest-plan** | Game QA | Create structured playtesting plan | Playtest plan |
-| **performance** | Game QA | Design performance testing strategy | Performance test plan |
-| **test-review** | Game QA | Review test quality and coverage | Coverage report |
+| **test-framework** | Game Developer | Initialize game test framework (Unity/Unreal/Godot) | Test project setup |
+| **test-design** | Game Developer | Create comprehensive game test scenarios | Test plan |
+| **automate** | Game Developer | Generate automated game tests | Test suite |
+| **e2e-scaffold** | Game Developer | Scaffold E2E testing infrastructure | E2E test framework |
+| **playtest-plan** | Game Developer | Create structured playtesting plan | Playtest plan |
+| **performance** | Game Developer | Design performance testing strategy | Performance test plan |
+| **test-review** | Game Developer | Review test quality and coverage | Coverage report |
 
 **Use when:** You need to test your game, set up automation, or plan playtesting.
 
@@ -119,34 +120,30 @@ Set up and run game testing across all phases.
 | generate-project-context | Technical | Create project context |
 | correct-course | Production | Course correction analysis |
 
-### Game Developer (Link Freeman)
+### Technical Writer (Paige)
 
 | Workflow | Phase | Purpose |
 |----------|-------|---------|
-| dev-story | Production | Implement story tasks |
-| code-review | Production | Review code quality |
-| quick-dev | Quick Flow | Quick development iteration |
+| document-project | Technical | Document an existing game repository for AI-assisted development |
 
-### Game Scrum Master (Max)
+### Game Developer (Link Freeman)
 
 | Workflow | Phase | Purpose |
 |----------|-------|---------|
 | sprint-planning | Production | Plan sprints from epics |
 | sprint-status | Production | View sprint progress |
 | create-story | Production | Create implementation stories |
-| retrospective | Production | Facilitate retrospective |
-
-### Game QA (GLaDOS)
-
-| Workflow | Phase | Purpose |
-|----------|-------|---------|
-| test-framework | Any | Initialize test framework |
-| test-design | Any | Create test scenarios |
-| automate | Any | Generate automated tests |
-| e2e-scaffold | Any | Scaffold E2E testing |
-| playtest-plan | Any | Plan playtesting sessions |
-| performance | Any | Performance testing strategy |
-| test-review | Any | Review test coverage |
+| dev-story | Production | Implement story tasks |
+| code-review | Production | Review code quality |
+| retrospective | Production | Facilitate retrospective after epic completion |
+| test-framework | Testing | Initialize game test framework |
+| test-design | Testing | Create test scenarios |
+| automate | Testing | Generate automated game tests |
+| e2e-scaffold | Testing | Scaffold E2E testing |
+| playtest-plan | Testing | Plan playtesting sessions |
+| performance | Testing | Design performance testing strategy |
+| test-review | Testing | Review test coverage |
+| quick-dev | Quick Flow | Quick development iteration |
 
 ### Game Solo Dev (Indie)
 
@@ -160,6 +157,6 @@ Set up and run game testing across all phases.
 
 ## See Also
 
-- **[Agents Reference](./agents.md)** — Learn about all 6 BMGD agents
+- **[Agents Reference](./agents.md)** — Learn about all 5 BMGD agents
 - **[Quick Flow vs Full Production](../explanation/quick-flow-vs-full.md)** — Choose your development approach
 - **[Game Types Reference](./game-types.md)** — All 24 game type templates
