@@ -194,7 +194,7 @@ Jak chcesz, mogę od razu po Twojej liście przygotować:
 mapowanie agentów z tego repo → format GitHub Copilot
 oraz pierwszy zestaw promptów/skill do konwersji.
 You asked
-czy jesteś w stanie przeanalizowac repo z naszą grą i dostosować konwersję tak by jak najwięcej informacji i umiejętności mógł wykorzystać później copilot?? link do repo  https://github.com/diwad-code/SpaceshipGame
+czy jesteś w stanie przeanalizowac repo z naszą grą i dostosować konwersję tak by jak najwięcej informacji i umiejętności mógł wykorzystać później copilot?? link do repo  <https://github.com/diwad-code/SpaceshipGame>
 
 
 Analyzing repository for game and optimizing conversion

@@ -16,6 +16,8 @@ Technical documentation for BMad Game Dev Studio.
 - **[Game Types](./game-types.md)** — All 24 game type templates
 - **[SpaceshipGame Conversion Context](./spaceshipgame-conversion.md)** —
   branch-specific handoff for adapting BMGD content into `SpaceshipGame`
+- **[SpaceshipGame Game Brief Conversion](./spaceshipgame-game-brief-conversion.md)** —
+  source-to-target mapping for the first concrete Copilot-facing conversion
 
 ---
 

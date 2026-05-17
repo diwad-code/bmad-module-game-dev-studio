@@ -148,8 +148,9 @@ otherwise.
 
 Pick one of these and continue:
 
-1. design a `SpaceshipGame` game-brief prompt/doc package from
-   `gds-create-game-brief`
+1. use `./docs/reference/spaceshipgame-game-brief-conversion.md` as the source
+   spec for implementing the target-side game-brief prompt/doc package in
+   `SpaceshipGame`
 2. create a source-to-target conversion map for `gds-gdd`
 3. extract Phaser-relevant architecture guidance from `gds-game-architecture`
 4. produce a minimal `gds-investigate` adaptation spec for the target repo
