@@ -14,6 +14,8 @@ Technical documentation for BMad Game Dev Studio.
 - **[Agents](./agents.md)** — BMGD's five specialized game development agents
 - **[Workflows](./workflows.md)** — Complete catalog of all BMGD workflows
 - **[Game Types](./game-types.md)** — All 24 game type templates
+- **[SpaceshipGame Conversion Context](./spaceshipgame-conversion.md)** —
+  branch-specific handoff for adapting BMGD content into `SpaceshipGame`
 
 ---
 
