@@ -20,6 +20,8 @@ Technical documentation for BMad Game Dev Studio.
   source-to-target mapping for the first concrete Copilot-facing conversion
 - **[SpaceshipGame GDD Conversion](./spaceshipgame-gdd-conversion.md)** —
   source-to-target mapping for the target-side GDD prompt and design docs
+- **[SpaceshipGame Architecture Conversion](./spaceshipgame-architecture-conversion.md)** —
+  source-to-target mapping for the target-side architecture prompt and docs
 
 ---
 

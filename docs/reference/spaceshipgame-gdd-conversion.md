@@ -219,5 +219,6 @@ Do not carry over:
 After the target-side GDD prompt/doc package is implemented in `SpaceshipGame`,
 the next highest-value source task is:
 
-1. extract Phaser-relevant architecture guidance from `gds-game-architecture`
-
+1. use `./spaceshipgame-architecture-conversion.md` to implement the
+   target-side architecture prompt/doc package adapted from
+   `gds-game-architecture`
