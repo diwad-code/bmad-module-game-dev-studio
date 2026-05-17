@@ -219,6 +219,6 @@ Do not carry over:
 After the target-side GDD prompt/doc package is implemented in `SpaceshipGame`,
 the next highest-value source task is:
 
-1. use `./spaceshipgame-architecture-conversion.md` to implement the
-   target-side architecture prompt/doc package adapted from
-   `gds-game-architecture`
+1. use `./spaceshipgame-mechanika-skill-conversion.md` to implement the
+   lightweight skill that helps Copilot create and refine focused gameplay specs
+   in `mechanika/`

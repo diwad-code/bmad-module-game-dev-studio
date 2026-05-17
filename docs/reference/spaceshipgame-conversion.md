@@ -105,6 +105,21 @@ GitHub prompt/doc/agent layout, rather than a file-for-file transplant.
 | `gds-create-story` / `gds-dev-story` | defer | Low | Target repo has no implementation tree yet |
 | test and sprint workflows | defer | Low | Too early before runnable code exists |
 
+## Recommended implementation order for mechanika-oriented Copilot support
+
+If the immediate goal is to help Copilot produce durable design content in
+`SpaceshipGame/mechanika/`, use this target-side order:
+
+1. implement the game-brief prompt/doc package from
+   `./spaceshipgame-game-brief-conversion.md`
+2. implement the GDD prompt/doc package from
+   `./spaceshipgame-gdd-conversion.md`
+3. implement the lightweight `mechanika/` helper skill from
+   `./spaceshipgame-mechanika-skill-conversion.md`
+
+Keep architecture and investigation work after these three items unless the
+target repo uncovers a concrete technical blocker first.
+
 ## Things that should not be ported directly
 
 Do not directly convert these into the target repo:
@@ -153,8 +168,11 @@ Pick one of these and continue:
    `SpaceshipGame`
 2. use `./docs/reference/spaceshipgame-gdd-conversion.md` as the source spec
    for implementing the target-side GDD prompt/doc package in `SpaceshipGame`
-3. use `./docs/reference/spaceshipgame-architecture-conversion.md` as the
+3. use `./docs/reference/spaceshipgame-mechanika-skill-conversion.md` as the
+   source spec for implementing the lightweight `mechanika/` helper skill in
+   `SpaceshipGame`
+4. use `./docs/reference/spaceshipgame-architecture-conversion.md` as the
    source spec for implementing the target-side architecture prompt/doc package
    in `SpaceshipGame`
-4. use `./docs/reference/spaceshipgame-investigate-conversion.md` as the source
+5. use `./docs/reference/spaceshipgame-investigate-conversion.md` as the source
    spec for implementing a minimal target-side investigation prompt
