@@ -1,63 +1,35 @@
 ---
 title: Welcome
-description: BMad Game Dev Studio - Game development workflows for Unity, Unreal, and Godot
+description: Current branch context for adapting BMGD into SpaceshipGame Copilot assets
 ---
 
-# BMad Game Dev Studio
+# SpaceshipGame conversion workspace
 
-BMGD brings BMad's structured development to game development. Create working prototypes quickly in Unity, Unreal, Godot—or any engine you choose.
+This documentation set is currently serving a branch-specific purpose: using BMad Game Dev Studio as a **source repository** for work that will later be applied to `diwad-code/SpaceshipGame`.
 
----
+## Current branch intent
 
-## Supported Engines
+- analyze BMGD workflows as source material
+- preserve the approved conversion plan in tracked docs
+- keep future AI sessions aligned with the same assumptions
+- avoid mechanical 1:1 porting into the target repo
 
-BMGD has first-class support for:
+## Start here
 
-- **[Unity](https://unity.com)** — C# scripting, industry-standard for many game types
-- **[Unreal Engine](https://www.unrealengine.com/)** — Blueprint and C++, AAA powerhouse
-- **[Godot](https://godotengine.org/)** — Open-source, GDScript, rapidly growing
+1. [Analyze an existing game project](how-to/analyze-existing-game-project.md)
+2. [SpaceshipGame conversion context](reference/spaceshipgame-conversion.md)
+3. [SpaceshipGame game brief conversion](reference/spaceshipgame-game-brief-conversion.md)
+4. [SpaceshipGame GDD conversion](reference/spaceshipgame-gdd-conversion.md)
+5. [SpaceshipGame architecture conversion](reference/spaceshipgame-architecture-conversion.md)
+6. [SpaceshipGame investigate conversion](reference/spaceshipgame-investigate-conversion.md)
 
-But you're not limited to these—BMGD works with any platform.
+## Operating rules for this branch
 
----
+- Read `poprzednia-rozmwa.md` in the repository root first when it is present.
+- Use `AGENTS.md` and the SpaceshipGame reference notes as fallback context.
+- Run `document-project` and `generate-project-context` against the target repo before deciding that BMGD itself needs changes.
+- Keep this documentation and the root README updated as the branch evolves.
 
-## What BMGD Does
+## What this docs site still contains
 
-- **Product Research** — Market analysis, competitor research, positioning
-- **Game Design Document** — Comprehensive GDD with mechanics, progression, and balance
-- **Narrative Design** — Story structure, characters, dialogue, world-building
-- **Technical Architecture** — Engine patterns, performance considerations
-- **Production Planning** — Epic-driven sprints, story tracking, retrospectives
-- **Quick Prototyping** — Skip the planning, jump straight into building
-
----
-
-## Quick Start
-
-| Workflow | Purpose |
-|----------|---------|
-| [Your first game project](tutorials/first-game-project.md) | Create your first prototype in 15-30 minutes |
-| [Quick Flow vs Full Production](explanation/quick-flow-vs-full.md) | Choose your development approach |
-| [Set up Unity](how-to/setup-unity.md) | Configure Unity for BMGD |
-| [Set up Unreal](how-to/setup-unreal.md) | Configure Unreal for BMGD |
-| [Set up Godot](how-to/setup-godot.md) | Configure Godot for BMGD |
-| [Analyze an existing game project](how-to/analyze-existing-game-project.md) | Document a brownfield game repo and generate AI context |
-
----
-
-## Quick Links
-
-| Section | Purpose |
-| ------- | ------- |
-| **[Tutorials](tutorials/)** | Get started with BMGD |
-| **[How-To Guides](how-to/)** | Practical guides for engines and workflows |
-| **[Explanation](explanation/)** | Learn how BMGD works |
-| **[Reference](reference/)** | Agents, workflows, and commands |
-
----
-
-## Community
-
-- **[Discord](https://discord.gg/gk8jAdXWmj)** — Get help from other game devs
-- **[GitHub](https://github.com/bmad-code-org/bmad-module-game-dev-studio)** — Source code and issues
-- **[BMad Method Docs](https://docs.bmad-method.org)** — Core framework documentation
+The wider docs set still documents BMGD itself, but for this branch the most important materials are the brownfield analysis guide and the SpaceshipGame conversion references.

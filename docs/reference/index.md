@@ -1,49 +1,35 @@
 ---
 title: Reference
-description: Technical reference for BMGD
+description: Reference for the current branch mission and the underlying BMGD workflows
 ---
 
 # Reference
 
-Technical documentation for BMad Game Dev Studio.
+This section now prioritizes the material needed for the current `SpaceshipGame` conversion mission.
 
----
+## Branch-critical reference
 
-## Core Reference
+- **[SpaceshipGame conversion context](./spaceshipgame-conversion.md)** — branch handoff, assumptions, and boundaries
+- **[SpaceshipGame game brief conversion](./spaceshipgame-game-brief-conversion.md)** — first target-side prompt/doc conversion
+- **[SpaceshipGame GDD conversion](./spaceshipgame-gdd-conversion.md)** — target-side GDD workflow and docs mapping
+- **[SpaceshipGame architecture conversion](./spaceshipgame-architecture-conversion.md)** — architecture prompt/doc conversion mapping
+- **[SpaceshipGame investigate conversion](./spaceshipgame-investigate-conversion.md)** — lightweight investigation prompt conversion
+- **[SpaceshipGame mechanika skill conversion](./spaceshipgame-mechanika-skill-conversion.md)** — lightweight `mechanika/` helper skill mapping
 
-- **[Agents](./agents.md)** — BMGD's five specialized game development agents
-- **[Workflows](./workflows.md)** — Complete catalog of all BMGD workflows
-- **[Game Types](./game-types.md)** — All 24 game type templates
-- **[SpaceshipGame Conversion Context](./spaceshipgame-conversion.md)** —
-  branch-specific handoff for adapting BMGD content into `SpaceshipGame`
-- **[SpaceshipGame Game Brief Conversion](./spaceshipgame-game-brief-conversion.md)** —
-  source-to-target mapping for the first concrete Copilot-facing conversion
-- **[SpaceshipGame GDD Conversion](./spaceshipgame-gdd-conversion.md)** —
-  source-to-target mapping for the target-side GDD prompt and design docs
-- **[SpaceshipGame Mechanika Skill Conversion](./spaceshipgame-mechanika-skill-conversion.md)** —
-  source-to-target mapping for the lightweight `mechanika/` helper skill
-- **[SpaceshipGame Architecture Conversion](./spaceshipgame-architecture-conversion.md)** —
-  source-to-target mapping for the target-side architecture prompt and docs
-- **[SpaceshipGame Investigate Conversion](./spaceshipgame-investigate-conversion.md)** —
-  source-to-target mapping for a lightweight target-side investigation prompt
+## Current priority workflows
 
----
+For this branch, start with these workflows before editing BMGD itself:
 
-## Commands Reference
+| Command | Purpose |
+| --- | --- |
+| `/bmgd-document-project` | Extract rich brownfield documentation from `SpaceshipGame` |
+| `/bmgd-generate-project-context` | Turn scan output into durable implementation rules |
+| `/bmgd-game-brief` | Source material for target-side game-brief conversion |
+| `/bmgd-create-architecture` | Source material for target-side architecture conversion |
+| `/bmgd-investigate` | Source material for a lightweight investigation prompt |
 
-| Command | Agent | Purpose |
-|---------|-------|---------|
-| `/bmgd-document-project` | Technical Writer | Document an existing game repository for brownfield work |
-| `/bmgd-quick-prototype` | Indie | Create a rapid game prototype |
-| `/bmgd-brainstorm-game` | Game Designer | Generate game ideas |
-| `/bmgd-game-brief` | Game Designer | Create a project brief |
-| `/bmgd-create-gdd` | Game Designer | Create a Game Design Document |
-| `/bmgd-create-architecture` | Game Architect | Create technical architecture |
-| `/bmgd-generate-project-context` | Game Architect | Generate project context |
-| `/bmgd-sprint-planning` | Game Developer | Plan and track sprints |
-| `/bmgd-sprint-status` | Game Developer | View sprint progress |
-| `/bmgd-create-story` | Game Developer | Create implementation stories |
-| `/bmgd-dev-story` | Game Developer | Implement a story |
-| `/bmgd-code-review` | Game Developer | Review code quality |
+## Wider module reference
 
-For the complete workflow catalog, see the [Workflows Reference](./workflows.md).
+- **[Agents](./agents.md)** — BMGD's five specialized agents
+- **[Workflows](./workflows.md)** — current workflow catalog
+- **[Game Types](./game-types.md)** — the full set of game type templates used by the GDD flow

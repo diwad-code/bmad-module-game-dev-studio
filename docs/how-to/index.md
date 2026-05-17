@@ -1,58 +1,41 @@
 ---
 title: "How-To Guides"
-description: Practical guides for specific game development tasks
+description: Practical guidance for the current SpaceshipGame conversion workflow
 ---
 
 # How-To Guides
 
-Step-by-step guides for completing specific game development tasks with BMGD.
+For this branch, the practical workflow is centered on **brownfield analysis first** and only then on BMGD-side adjustments.
 
----
+## Primary workflow for the current project
 
-## Engine Setup Guides
+1. **[Analyze an existing game project with BMGD](./analyze-existing-game-project.md)**
+   - run the documentation workflow on `SpaceshipGame`
+   - prefer deep or exhaustive scanning
+   - capture structure, architecture, commands, and conventions
+2. **Generate `project-context.md`**
+   - use `/bmgd-generate-project-context` after the scan
+   - turn the scan output into short durable rules for later agents
+3. **Evaluate gaps**
+   - compare the generated output with the real needs of `SpaceshipGame`
+   - only then decide whether BMGD extraction guidance must change
+4. **Use the reference conversion specs**
+   - game brief
+   - GDD
+   - architecture
+   - investigation
 
-Get started with your preferred game engine:
+## Secondary BMGD guides still available
 
-- **[Set up a Unity project with BMGD](./setup-unity.md)** — Configure Unity for full production development
-- **[Set up an Unreal project with BMGD](./setup-unreal.md)** — Configure Unreal for full production development
-- **[Set up a Godot project with BMGD](./setup-godot.md)** — Configure Godot for full production development
-- **[Analyze an existing game project with BMGD](./analyze-existing-game-project.md)** — Build brownfield project knowledge before implementation
+These remain useful when you need background on the wider module:
 
----
+- [Set up a Unity project with BMGD](./setup-unity.md)
+- [Set up an Unreal project with BMGD](./setup-unreal.md)
+- [Set up a Godot project with BMGD](./setup-godot.md)
+- [Run sprint planning with BMGD](./sprint-planning.md)
 
-## Quick Flow Guides
+## Reference links
 
-Rapid prototyping and fast iteration:
-
-- **[Quick Flow: Rapid prototyping](./quick-prototype.md)** — Create a playable prototype in hours (coming soon)
-
----
-
-## Production Workflows
-
-Plan, track, and implement your game:
-
-- **[Run sprint planning](./sprint-planning.md)** — Plan and track development sprints
-- **[Conduct code reviews](./code-review.md)** — Review code quality (coming soon)
-- **[Course correction](./correct-course.md)** — Get back on track when implementation diverges (coming soon)
-
----
-
-## Testing Guides
-
-Set up and run testing for your game:
-
-- **[Set up automated testing](./testing-setup.md)** — Initialize test frameworks (coming soon)
-- **[Design game tests](./test-design.md)** — Create comprehensive test scenarios (coming soon)
-- **[Plan playtesting sessions](./playtesting.md)** — Structure your playtesting (coming soon)
-- **[Performance testing](./performance-testing.md)** — Design performance testing strategy (coming soon)
-
----
-
-## Reference
-
-For complete workflow and agent reference, see:
-
-- **[Workflows Reference](../reference/workflows.md)** — All BMGD workflows
-- **[Agents Reference](../reference/agents.md)** — All 6 BMGD agents
-- **[Game Types Reference](../reference/game-types.md)** — All 24 game type templates
+- [Workflows reference](../reference/workflows.md)
+- [Agents reference](../reference/agents.md)
+- [SpaceshipGame conversion context](../reference/spaceshipgame-conversion.md)

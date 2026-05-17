@@ -1,132 +1,74 @@
-# BMad Game Dev Studio
+# SpaceshipGame conversion workspace
 
-[![Version](https://img.shields.io/npm/v/bmad-game-dev-studio?color=blue&label=version)](https://www.npmjs.com/package/bmad-game-dev-studio)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Python Version](https://img.shields.io/badge/python-%3E%3D3.10-blue?logo=python&logoColor=white)](https://www.python.org)
-[![uv](https://img.shields.io/badge/uv-package%20manager-blueviolet?logo=uv)](https://docs.astral.sh/uv/)
-[![Discord](https://img.shields.io/badge/Discord-Join%20Community-7289da?logo=discord&logoColor=white)](https://discord.gg/gk8jAdXWmj)
+This branch of `/home/runner/work/bmad-module-game-dev-studio/bmad-module-game-dev-studio` is being used as a **source repository** for adapting BMad Game Dev Studio (BMGD) ideas into the separate target project [`diwad-code/SpaceshipGame`](https://github.com/diwad-code/SpaceshipGame).
 
-**BMGD brings BMad's structured development to game development.** Create working prototypes quickly in Unity, Unreal, Godot—or any engine you choose.
+It is **not** a generic BMGD roadmap branch.
 
-![BMGD Logo](docs/bmgd-logo.png)
+## Current goal
 
-## About BMGD
+Use the existing BMGD agents, prompts, and workflows as source material for a **semantic conversion** into GitHub Copilot assets for `SpaceshipGame`.
 
-BMad Game Dev Studio (BMGD) adapts the BMad Method framework for game development. Developed by game industry veterans, BMGD guides you through product research, technical design, narrative design, and a full epic-driven production cycle.
+The target shape is lightweight:
 
-## Supported Engines
+- `.github/prompts/`
+- `.github/agents/`
+- `.github/skills/`
+- `docs/`
+- `mechanika/`
 
-BMGD has first-class support for:
+That means we should adapt intent and knowledge, not copy BMGD runtime files 1:1.
 
-- [Unity](https://unity.com) — C# scripting, industry-standard for many game types
-- [Unreal Engine](https://www.unrealengine.com/) — Blueprint and C++, AAA powerhouse
-- [Godot](https://godotengine.org/) — Open-source, GDScript, rapidly growing
+## Approved working assumptions
 
-But you're not limited to these—BMGD works with any platform, from pure C to custom engines.
+- Treat `poprzednia-rozmwa.md` in the repository root as the approved branch plan.
+- If a corrected `poprzednia-rozmowa.md` variant appears, treat it as the same source.
+- Keep `AGENTS.md` and `docs/reference/spaceshipgame-conversion.md` aligned with that plan.
+- Prefer conversion into prompts, agent docs, reusable skills, and durable project documentation.
+- Do **not** port `_bmad` runtime wiring, `src/module.yaml`, `src/module-help.csv`, or `customize.toml` directly into the target repo.
 
-## What You Can Create
+## Required order of work
 
-BMGD supports **21 game types**, including:
+Before making further BMGD-side feature changes, follow this sequence:
 
-| Genre | Examples |
-|-------|----------|
-| Action | Platformers, shooters, hack-and-slash |
-| RPG | Action RPG, tactical RPG, dungeon crawlers |
-| Strategy | Turn-based, RTS, tower defense |
-| Simulation | Life sim, tycoon, management |
-| Adventure | Visual novels, point-and-click, walking simulators |
-| And more... | Survival, horror, puzzle, racing, etc. |
+1. Run the existing brownfield workflow against `SpaceshipGame` with `/bmgd-document-project`.
+2. Generate concise durable rules with `/bmgd-generate-project-context`.
+3. Review the produced documentation and `project-context.md`.
+4. Only then decide whether BMGD itself needs changes to extract missing game-specific knowledge.
 
-## What BMGD Does
+This branch should stay focused on improving that conversion path.
 
-- **Product Research** — Market analysis, competitor research, positioning
-- **Game Design Document** — Comprehensive GDD with mechanics, progression, and balance
-- **Narrative Design** — Story structure, characters, dialogue, world-building
-- **Technical Architecture** — Engine patterns, performance considerations
-- **Production Planning** — Epic-driven sprints, story tracking, retrospectives
-- **Quick Prototyping** — Skip the planning, jump straight into building
+## Highest-value source areas
 
-## What BMGD Doesn't Do
+These BMGD areas remain the best sources for future `SpaceshipGame` conversion work:
 
-BMGD works *with* coding agents like Claude Code, Cursor, or GitHub Copilot—but it can't create everything:
+1. `src/workflows/1-preproduction/gds-create-game-brief/`
+2. `src/workflows/2-design/gds-gdd/`
+3. `src/workflows/3-technical/gds-game-architecture/`
+4. `src/workflows/4-production/gds-investigate/`
 
-- Art assets (models, textures, sprites)
-- Animations
-- Music and sound effects
-- Full game implementation from scratch
+## Recommended next target-side conversions
 
-Think of BMGD as your senior game dev colleague—not a replacement for your entire team.
+1. Game brief prompt/doc flow
+2. GDD workflow plus durable docs
+3. Architecture prompt/doc deepening
+4. Lightweight investigation prompt
 
-## Installation
+## What to defer
 
-BMGD is installed as a module during BMad Method setup:
+Until `SpaceshipGame` has real code, defer:
 
-```bash
-npx bmad-method install
-```
+- story implementation flows
+- sprint-management flows
+- test, e2e, playtest, and performance flows
+- anything that assumes a runnable `src/` tree
 
-Select **Game Dev Studio** from the modules list. 
+## Source-of-truth files for this branch
 
-*Just a heads-up: if you’re only using Game Dev Studio (GDS), you don’t need to install the main BMM module. GDS runs on its own, but BMM gets updated more often, so you might want to use its workflows—they work together nicely!*
+- `/home/runner/work/bmad-module-game-dev-studio/bmad-module-game-dev-studio/poprzednia-rozmwa.md`
+- `/home/runner/work/bmad-module-game-dev-studio/bmad-module-game-dev-studio/AGENTS.md`
+- `/home/runner/work/bmad-module-game-dev-studio/bmad-module-game-dev-studio/docs/reference/spaceshipgame-conversion.md`
+- `/home/runner/work/bmad-module-game-dev-studio/bmad-module-game-dev-studio/SYNC-PLAN.md`
 
-## Quick Start
+## Documentation policy
 
-After installing, run from your project root:
-
-```
-/bmad-help          # Get guided help for game development
-/bmgd-quick-dev     # Jump straight into prototyping
-/bmgd-gdd           # Create a Game Design Document
-/bmgd-narrative     # Design your game's story
-```
-
-## Two Ways to Work
-
-| Approach | When to Use | Workflow |
-|----------|-------------|----------|
-| **Quick Flow** | Rapid prototyping, small projects | `/bmgd-quick-dev` |
-| **Full Production** | Full games, teams, long-term | `/bmad-help` for guided path |
-
-## Example: Starting a New Game
-
-```
-You: /bmad-help
-BMGD: What kind of game are you making?
-You: A tactical sci-fi RPG
-BMGD: Great choice! Here's what I recommend...
-    [Guides you through genre-specific planning]
-    [Helps select appropriate workflows]
-```
-
-## Documentation
-
-**[BMad Game Dev Studio Documentation](http://game-dev-studio-docs.bmad-method.org)** — Tutorials, how-to guides, and reference
-
-- [Getting Started](http://game-dev-studio-docs.bmad-method.org/tutorials/)
-- [BMad Method Docs](http://docs.bmad-method.org) — Core framework documentation
-
-## Community
-
-- [Discord](https://discord.gg/gk8jAdXWmj) — Get help from other game devs
-- [YouTube](https://youtube.com/@BMadCode) — Tutorials, master class, and more
-- [X / Twitter](https://x.com/BMadCode)
-- [Website](https://bmadcode.com)
-- [GitHub Issues](https://github.com/bmad-code-org/bmad-module-game-dev-studio/issues) — Report bugs
-
-## Support BMad
-
-BMad is free for everyone and always will be. Star this repo, [buy me a coffee](https://buymeacoffee.com/bmad), or email <contact@bmadcode.com> for corporate sponsorship.
-
-## License
-
-MIT License — see [LICENSE](LICENSE) for details.
-
----
-
-**BMad Game Dev Studio** — Part of the [BMad Method](https://github.com/bmad-code-org/BMAD-METHOD) ecosystem.
-
-[![Contributors](https://contrib.rocks/image?repo=bmad-code-org/bmad-module-game-dev-studio)](https://github.com/bmad-code-org/bmad-module-game-dev-studio/graphs/contributors)
-
-See [CONTRIBUTORS.md](CONTRIBUTORS.md) for contributor information.
-
-*If you can dream it, you can build it.*
+README and branch-facing documentation should be updated whenever the branch goal, assumptions, workflow order, or conversion priorities change.
