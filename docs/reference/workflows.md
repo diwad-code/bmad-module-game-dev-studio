@@ -57,11 +57,12 @@ Plan your technical architecture and project structure.
 
 | Workflow | Agent | Purpose | Outputs |
 |----------|-------|---------|---------|
+| **document-project** | Technical Writer | Analyze an existing game repository and generate brownfield documentation | Project knowledge docs |
 | **create-architecture** | Game Architect | Create game architecture with engine-specific patterns | `architecture.md` |
 | **generate-project-context** | Game Architect | Create project context for AI consistency | `project-context.md` |
 | **correct-course** | Game Architect | Course correction when implementation is off-track | Analysis report |
 
-**Use when:** You need to plan how to build your game or need to get back on track.
+**Use when:** You need to understand an existing game project, plan how to build your game, or get implementation back on track.
 
 ---
 
@@ -119,6 +120,12 @@ Set up and run game testing across all phases.
 | generate-project-context | Technical | Create project context |
 | correct-course | Production | Course correction analysis |
 
+### Technical Writer (Paige)
+
+| Workflow | Phase | Purpose |
+|----------|-------|---------|
+| document-project | Technical | Document an existing game repository for AI-assisted development |
+
 ### Game Developer (Link Freeman)
 
 | Workflow | Phase | Purpose |
@@ -160,6 +167,6 @@ Set up and run game testing across all phases.
 
 ## See Also
 
-- **[Agents Reference](./agents.md)** — Learn about all 6 BMGD agents
+- **[Agents Reference](./agents.md)** — Learn about all 5 BMGD agents
 - **[Quick Flow vs Full Production](../explanation/quick-flow-vs-full.md)** — Choose your development approach
 - **[Game Types Reference](./game-types.md)** — All 24 game type templates

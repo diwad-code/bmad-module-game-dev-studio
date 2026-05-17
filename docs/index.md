@@ -41,6 +41,7 @@ But you're not limited to these—BMGD works with any platform.
 | [Set up Unity](how-to/setup-unity.md) | Configure Unity for BMGD |
 | [Set up Unreal](how-to/setup-unreal.md) | Configure Unreal for BMGD |
 | [Set up Godot](how-to/setup-godot.md) | Configure Godot for BMGD |
+| [Analyze an existing game project](how-to/analyze-existing-game-project.md) | Document a brownfield game repo and generate AI context |
 
 ---
 

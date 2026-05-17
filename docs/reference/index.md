@@ -11,7 +11,7 @@ Technical documentation for BMad Game Dev Studio.
 
 ## Core Reference
 
-- **[Agents](./agents.md)** — BMGD's six specialized game development agents
+- **[Agents](./agents.md)** — BMGD's five specialized game development agents
 - **[Workflows](./workflows.md)** — Complete catalog of all BMGD workflows
 - **[Game Types](./game-types.md)** — All 24 game type templates
 
@@ -21,6 +21,7 @@ Technical documentation for BMad Game Dev Studio.
 
 | Command | Agent | Purpose |
 |---------|-------|---------|
+| `/bmgd-document-project` | Technical Writer | Document an existing game repository for brownfield work |
 | `/bmgd-quick-prototype` | Indie | Create a rapid game prototype |
 | `/bmgd-brainstorm-game` | Game Designer | Generate game ideas |
 | `/bmgd-game-brief` | Game Designer | Create a project brief |
