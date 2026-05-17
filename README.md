@@ -65,6 +65,7 @@ Until `SpaceshipGame` has real code, defer:
 ## Source-of-truth files for this branch
 
 - [`./poprzednia-rozmwa.md`](./poprzednia-rozmwa.md)
+- [`./poprzednia-rozmowa.md`](./poprzednia-rozmowa.md) (if this corrected variant exists in the checkout)
 - [`./AGENTS.md`](./AGENTS.md)
 - [`./docs/reference/spaceshipgame-conversion.md`](./docs/reference/spaceshipgame-conversion.md)
 - [`./SYNC-PLAN.md`](./SYNC-PLAN.md)
