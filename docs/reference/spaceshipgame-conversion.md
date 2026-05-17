@@ -19,12 +19,11 @@ chat, but that context was not stored in tracked files.
 This file turns that session state into repo-visible context so future agents do
 not need to reconstruct it from memory.
 
-The user later clarified that `./poprzednia-rozmwa.md` contains the exact
-approved action plan from the earlier conversation. If the actual checked-in
-filename uses the corrected spelling `./poprzednia-rozmowa.md`, use that
-instead. Future AI sessions should read that prior-conversation file first and
-treat it as the most specific branch-level plan when it is available in the
-checkout.
+The user later clarified that a root-level prior-conversation markdown file
+contains the exact approved action plan from the earlier conversation. Future
+AI sessions should read `./poprzednia-rozmowa.md` first and treat that
+prior-conversation file as the most specific branch-level plan when it is
+available in the checkout.
 
 ## Current target-repo understanding
 
@@ -123,7 +122,7 @@ When editing this branch, prefer changes that help with:
 2. making the current conversion goal legible to future AIs
 3. identifying which BMGD materials are worth adapting next
 4. staying aligned with the approved plan recorded in the prior-conversation
-   file (`./poprzednia-rozmwa.md` or `./poprzednia-rozmowa.md`)
+   file (`./poprzednia-rozmowa.md`)
 
 Do not treat this branch as a general BMGD roadmap branch unless the user says
 otherwise.
@@ -134,11 +133,10 @@ otherwise.
   environment during this session, so its exact text is not preserved here.
 - No tracked file in this repo previously captured the SpaceshipGame conversion
   context, which is why this note was added.
-- During the PR comment follow-up, `./poprzednia-rozmwa.md` was referenced by
-  the user as the approved plan, but it was not visible in this local checkout.
-  If the repository later contains `./poprzednia-rozmowa.md` instead, treat it
-  as the same intended source. Where that file differs from this summary, the
-  prior-conversation file should take precedence.
+- During the PR comment follow-up, the user referenced a root-level
+  prior-conversation markdown file as the approved plan, but it was not visible
+  in this local checkout. Where `./poprzednia-rozmowa.md` differs from this
+  summary, the prior-conversation file should take precedence.
 
 ## Suggested next action for the next AI
 
