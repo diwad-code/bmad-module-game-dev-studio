@@ -28,10 +28,10 @@ repository with no `src/` tree and no runnable app yet.
 
 The source workflow lives in:
 
-- `/home/runner/work/bmad-module-game-dev-studio/bmad-module-game-dev-studio/src/workflows/1-preproduction/gds-create-game-brief/SKILL.md`
-- `/home/runner/work/bmad-module-game-dev-studio/bmad-module-game-dev-studio/src/workflows/1-preproduction/gds-create-game-brief/templates/game-brief-template.md`
-- `/home/runner/work/bmad-module-game-dev-studio/bmad-module-game-dev-studio/src/workflows/1-preproduction/gds-create-game-brief/checklist.md`
-- `/home/runner/work/bmad-module-game-dev-studio/bmad-module-game-dev-studio/src/workflows/1-preproduction/gds-create-game-brief/steps/`
+- `src/workflows/1-preproduction/gds-create-game-brief/SKILL.md`
+- `src/workflows/1-preproduction/gds-create-game-brief/templates/game-brief-template.md`
+- `src/workflows/1-preproduction/gds-create-game-brief/checklist.md`
+- `src/workflows/1-preproduction/gds-create-game-brief/steps/`
 
 Its durable value is not the BMad runtime or step-file orchestration. The value
 is the discovery sequence and the document structure.
@@ -161,4 +161,3 @@ After the target-side game-brief prompt/doc package is implemented in
 `SpaceshipGame`, the next highest-value source task is:
 
 1. convert `gds-gdd` into a target-side GDD workflow and durable docs
-
