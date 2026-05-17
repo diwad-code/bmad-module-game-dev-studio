@@ -141,7 +141,8 @@ The prompt should:
 Once the target repo has a stable `docs/GAME_BRIEF.md`, later conversions should
 treat it as a primary input for:
 
-- the future GDD prompt/doc flow adapted from `gds-gdd`
+- the future GDD prompt/doc flow adapted from `gds-gdd` (see
+  `./spaceshipgame-gdd-conversion.md`)
 - architecture deepening adapted from `gds-game-architecture`
 - later scene/system/event prompts when real code begins
 

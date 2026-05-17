@@ -151,6 +151,7 @@ Pick one of these and continue:
 1. use `./docs/reference/spaceshipgame-game-brief-conversion.md` as the source
    spec for implementing the target-side game-brief prompt/doc package in
    `SpaceshipGame`
-2. create a source-to-target conversion map for `gds-gdd`
+2. use `./docs/reference/spaceshipgame-gdd-conversion.md` as the source spec
+   for implementing the target-side GDD prompt/doc package in `SpaceshipGame`
 3. extract Phaser-relevant architecture guidance from `gds-game-architecture`
 4. produce a minimal `gds-investigate` adaptation spec for the target repo

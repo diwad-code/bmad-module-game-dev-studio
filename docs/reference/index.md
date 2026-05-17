@@ -18,6 +18,8 @@ Technical documentation for BMad Game Dev Studio.
   branch-specific handoff for adapting BMGD content into `SpaceshipGame`
 - **[SpaceshipGame Game Brief Conversion](./spaceshipgame-game-brief-conversion.md)** —
   source-to-target mapping for the first concrete Copilot-facing conversion
+- **[SpaceshipGame GDD Conversion](./spaceshipgame-gdd-conversion.md)** —
+  source-to-target mapping for the target-side GDD prompt and design docs
 
 ---
 
