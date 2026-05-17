@@ -21,9 +21,11 @@ not need to reconstruct it from memory.
 
 The user later clarified that a root-level prior-conversation markdown file
 contains the exact approved action plan from the earlier conversation. Future
-AI sessions should read `./poprzednia-rozmowa.md` first and treat that
-prior-conversation file as the most specific branch-level plan when it is
-available in the checkout. If the file is absent, use this document and
+AI sessions should read `./poprzednia-rozmwa.md` first, because that is the
+filename used in the user comment, and treat that prior-conversation file as
+the most specific branch-level plan when it is available in the checkout. If a
+corrected `./poprzednia-rozmowa.md` variant appears instead, treat it as the
+same handoff source. If neither file is present, use this document and
 `./AGENTS.md` as the fallback handoff context.
 
 ## Current target-repo understanding
@@ -123,7 +125,8 @@ When editing this branch, prefer changes that help with:
 2. making the current conversion goal legible to future AIs
 3. identifying which BMGD materials are worth adapting next
 4. staying aligned with the approved plan recorded in the prior-conversation
-   file (`./poprzednia-rozmowa.md`)
+   file (`./poprzednia-rozmwa.md`, or the corrected
+   `./poprzednia-rozmowa.md` variant if that is what exists)
 
 Do not treat this branch as a general BMGD roadmap branch unless the user says
 otherwise.
@@ -137,8 +140,9 @@ otherwise.
 - During the PR comment follow-up, the user referenced a root-level
   prior-conversation markdown file as the approved plan, but it was not visible
   in this local checkout. If a later fetch or commit adds
-  `./poprzednia-rozmowa.md`, that file should take precedence over this summary
-  where they differ.
+  `./poprzednia-rozmwa.md`, or the corrected `./poprzednia-rozmowa.md`
+  variant, that file should take precedence over this summary where they
+  differ.
 
 ## Suggested next action for the next AI
 
