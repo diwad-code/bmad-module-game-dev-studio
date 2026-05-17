@@ -15,8 +15,8 @@ The active branch name already reflects that goal:
 ## What was already established
 
 - The large BMAD-METHOD sync tracked in
-  `/home/runner/work/bmad-module-game-dev-studio/bmad-module-game-dev-studio/SYNC-PLAN.md`
-  is finished work for BMGD v0.5.0, not the current cross-repo task.
+  `./SYNC-PLAN.md` is finished work for BMGD v0.5.0, not the current cross-repo
+  task.
 - The recent cross-repo analysis concluded that the target repo should receive
   a **semantic conversion**, not a 1:1 file port.
 - BMGD uses the full module/runtime model:
@@ -90,8 +90,8 @@ Keep these for later, because `SpaceshipGame` is still mostly prompt/doc setup:
 
 ## Source-of-truth files in this repo for this branch
 
-- `/home/runner/work/bmad-module-game-dev-studio/bmad-module-game-dev-studio/AGENTS.md`
-- `/home/runner/work/bmad-module-game-dev-studio/bmad-module-game-dev-studio/docs/reference/spaceshipgame-conversion.md`
-- `/home/runner/work/bmad-module-game-dev-studio/bmad-module-game-dev-studio/SYNC-PLAN.md`
+- `./AGENTS.md`
+- `./docs/reference/spaceshipgame-conversion.md`
+- `./SYNC-PLAN.md`
 
 If another AI joins this branch, read those files first before making changes.
