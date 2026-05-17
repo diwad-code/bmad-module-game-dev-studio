@@ -36,7 +36,7 @@ Use this order for the current project:
 
 | Workflow | Agent | Purpose | Output |
 | --- | --- | --- | --- |
-| **gdd** | Game Designer | Create, update, or validate the main Game Design Document | `gdd.md` |
+| **create-gdd** (`/bmgd-create-gdd`) | Game Designer | Create, update, or validate the main Game Design Document | `gdd.md` |
 | **narrative** | Game Designer | Design story structure, characters, and worldbuilding | `narrative.md` |
 | **create-ux-design** | Game Designer | Define UX and UI direction for player-facing flows | UX design docs |
 | **prd** | Game Designer | Create, update, or validate a PRD derived from the GDD when needed | `prd.md` |
@@ -46,7 +46,7 @@ Use this order for the current project:
 | Workflow | Agent | Purpose | Output |
 | --- | --- | --- | --- |
 | **generate-project-context** | Game Architect | Create durable implementation rules for future agents | `project-context.md` |
-| **game-architecture** | Game Architect | Produce scale-appropriate technical architecture guidance | `architecture.md` |
+| **create-architecture** (`/bmgd-create-architecture`) | Game Architect | Produce scale-appropriate technical architecture guidance | `architecture.md` |
 | **create-epics-and-stories** | Game Architect | Break design into epics and implementation stories | epics and stories |
 | **check-implementation-readiness** | Game Architect | Confirm design and architecture are aligned before production | readiness report |
 | **test-framework** | Game Developer | Initialize an engine-appropriate testing foundation | test framework setup |

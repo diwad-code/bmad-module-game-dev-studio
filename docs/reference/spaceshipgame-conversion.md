@@ -41,9 +41,9 @@ That means this work must be a **semantic adaptation** of BMGD knowledge into a 
 
 Before making further BMGD-side feature changes, use the module on the real target repo first:
 
-1. run `gds-document-project` on `SpaceshipGame`
+1. run `/bmgd-document-project` (`gds-document-project`) on `SpaceshipGame`
 2. prefer a deep or exhaustive scan
-3. run `gds-generate-project-context`
+3. run `/bmgd-generate-project-context` (`gds-generate-project-context`)
 4. inspect the produced docs and `project-context.md`
 5. only then decide whether BMGD itself needs changes
 

@@ -1,6 +1,6 @@
 # SpaceshipGame conversion workspace
 
-This branch of `/home/runner/work/bmad-module-game-dev-studio/bmad-module-game-dev-studio` is being used as a **source repository** for adapting BMad Game Dev Studio (BMGD) ideas into the separate target project [`diwad-code/SpaceshipGame`](https://github.com/diwad-code/SpaceshipGame).
+This branch of [`diwad-code/bmad-module-game-dev-studio`](https://github.com/diwad-code/bmad-module-game-dev-studio) is being used as a **source repository** for adapting BMad Game Dev Studio (BMGD) ideas into the separate target project [`diwad-code/SpaceshipGame`](https://github.com/diwad-code/SpaceshipGame).
 
 It is **not** a generic BMGD roadmap branch.
 
@@ -64,10 +64,10 @@ Until `SpaceshipGame` has real code, defer:
 
 ## Source-of-truth files for this branch
 
-- `/home/runner/work/bmad-module-game-dev-studio/bmad-module-game-dev-studio/poprzednia-rozmwa.md`
-- `/home/runner/work/bmad-module-game-dev-studio/bmad-module-game-dev-studio/AGENTS.md`
-- `/home/runner/work/bmad-module-game-dev-studio/bmad-module-game-dev-studio/docs/reference/spaceshipgame-conversion.md`
-- `/home/runner/work/bmad-module-game-dev-studio/bmad-module-game-dev-studio/SYNC-PLAN.md`
+- [`./poprzednia-rozmwa.md`](./poprzednia-rozmwa.md)
+- [`./AGENTS.md`](./AGENTS.md)
+- [`./docs/reference/spaceshipgame-conversion.md`](./docs/reference/spaceshipgame-conversion.md)
+- [`./SYNC-PLAN.md`](./SYNC-PLAN.md)
 
 ## Documentation policy
 
