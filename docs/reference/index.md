@@ -22,6 +22,8 @@ Technical documentation for BMad Game Dev Studio.
   source-to-target mapping for the target-side GDD prompt and design docs
 - **[SpaceshipGame Architecture Conversion](./spaceshipgame-architecture-conversion.md)** —
   source-to-target mapping for the target-side architecture prompt and docs
+- **[SpaceshipGame Investigate Conversion](./spaceshipgame-investigate-conversion.md)** —
+  source-to-target mapping for a lightweight target-side investigation prompt
 
 ---
 

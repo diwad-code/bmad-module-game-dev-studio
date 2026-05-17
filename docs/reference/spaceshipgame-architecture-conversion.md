@@ -215,4 +215,5 @@ Do not carry over:
 After the target-side architecture prompt/doc package is implemented in
 `SpaceshipGame`, the next highest-value source task is:
 
-1. produce a lightweight `gds-investigate` adaptation spec for the target repo
+1. use `./spaceshipgame-investigate-conversion.md` to implement a lightweight
+   target-side investigation prompt adapted from `gds-investigate`
