@@ -28,9 +28,9 @@ Technical documentation for BMad Game Dev Studio.
 | `/bmgd-create-gdd` | Game Designer | Create a Game Design Document |
 | `/bmgd-create-architecture` | Game Architect | Create technical architecture |
 | `/bmgd-generate-project-context` | Game Architect | Generate project context |
-| `/bmgd-sprint-planning` | Game Scrum Master | Plan and track sprints |
-| `/bmgd-sprint-status` | Game Scrum Master | View sprint progress |
-| `/bmgd-create-story` | Game Scrum Master | Create implementation stories |
+| `/bmgd-sprint-planning` | Game Developer | Plan and track sprints |
+| `/bmgd-sprint-status` | Game Developer | View sprint progress |
+| `/bmgd-create-story` | Game Developer | Create implementation stories |
 | `/bmgd-dev-story` | Game Developer | Implement a story |
 | `/bmgd-code-review` | Game Developer | Review code quality |
 
