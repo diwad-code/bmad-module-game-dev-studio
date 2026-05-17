@@ -19,9 +19,8 @@ The active branch name already reflects that goal:
   task.
 - The user stated that a root-level prior-conversation markdown file contains
   the exact approved plan from the previous conversation. Treat
-  `./poprzednia-rozmowa.md` as the expected filename and use that
-  prior-conversation file as a primary planning source for this branch when it
-  is present in the checkout.
+  `./poprzednia-rozmowa.md` as the expected filename. If that file appears in
+  the checkout, use it as a primary planning source for this branch.
 - The recent cross-repo analysis concluded that the target repo should receive
   a **semantic conversion**, not a 1:1 file port.
 - BMGD uses the full module/runtime model:
@@ -95,9 +94,10 @@ Keep these for later, because `SpaceshipGame` is still mostly prompt/doc setup:
 
 ## Source-of-truth files in this repo for this branch
 
-- `./poprzednia-rozmowa.md` - approved action plan from the prior conversation
 - `./AGENTS.md`
 - `./docs/reference/spaceshipgame-conversion.md`
 - `./SYNC-PLAN.md`
 
-If another AI joins this branch, read those files first before making changes.
+If `./poprzednia-rozmowa.md` exists in the repo root, read it before the files
+above because it contains the user-approved branch plan. If another AI joins
+this branch, read the available files first before making changes.

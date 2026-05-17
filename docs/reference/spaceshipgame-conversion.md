@@ -23,7 +23,8 @@ The user later clarified that a root-level prior-conversation markdown file
 contains the exact approved action plan from the earlier conversation. Future
 AI sessions should read `./poprzednia-rozmowa.md` first and treat that
 prior-conversation file as the most specific branch-level plan when it is
-available in the checkout.
+available in the checkout. If the file is absent, use this document and
+`./AGENTS.md` as the fallback handoff context.
 
 ## Current target-repo understanding
 
@@ -135,8 +136,9 @@ otherwise.
   context, which is why this note was added.
 - During the PR comment follow-up, the user referenced a root-level
   prior-conversation markdown file as the approved plan, but it was not visible
-  in this local checkout. Where `./poprzednia-rozmowa.md` differs from this
-  summary, the prior-conversation file should take precedence.
+  in this local checkout. If a later fetch or commit adds
+  `./poprzednia-rozmowa.md`, that file should take precedence over this summary
+  where they differ.
 
 ## Suggested next action for the next AI
 
